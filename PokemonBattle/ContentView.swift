@@ -26,10 +26,13 @@ struct ContentView: View {
                     opponentPokemon.attacked()
                     attackDisabled = true
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                        if opponentPokemon.hpStatus.pokemonIsDefeated() || myPokemon.hpStatus.pokemonIsDefeated() {
+                        if opponentPokemon.hpStatus.pokemonIsDefeated() {
                             return
                         }
                         myPokemon.attacked()
+                        if myPokemon.hpStatus.pokemonIsDefeated() {
+                            return
+                        }
                         attackDisabled = false
                     }
                 }.disabled(attackDisabled)

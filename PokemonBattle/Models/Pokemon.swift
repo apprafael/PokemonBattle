@@ -25,7 +25,7 @@ struct Pokemon {
 
 struct HPStatus {
     var attempts: Int = 0
-    var hpLevel: CGFloat = 140.0
+    var hpLevel: CGFloat = 150.0
     var hpColor: Color = .green
     private var defeated = false
     
@@ -34,7 +34,7 @@ struct HPStatus {
         attempts += 1
         if hpLevel < 100 {  hpColor = .yellow   }
         if hpLevel < 50 {   hpColor = .red  }
-        if hpLevel < 0 {
+        if hpLevel < 1 {
             defeated = true
             hpLevel = 0
             return }
