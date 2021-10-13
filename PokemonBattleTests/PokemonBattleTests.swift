@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import hpbar
+@testable import Pokemon_Battle
 
 class PokemonBattleTests: XCTestCase {
 

@@ -17,6 +17,7 @@
 		268B3C37271626E700DA0920 /* MyPokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B3C2D271626E700DA0920 /* MyPokemonView.swift */; };
 		268B3C38271626E700DA0920 /* OpponentPokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B3C2E271626E700DA0920 /* OpponentPokemonView.swift */; };
 		268B3C39271626E700DA0920 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B3C2F271626E700DA0920 /* ContentView.swift */; };
+		268B3C3B27166AD200DA0920 /* HPBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B3C3A27166AD200DA0920 /* HPBarView.swift */; };
 		269B32452713C00E00B9357B /* PokemonBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B32442713C00E00B9357B /* PokemonBattleTests.swift */; };
 		269B324F2713C00E00B9357B /* PokemonBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B324E2713C00E00B9357B /* PokemonBattleUITests.swift */; };
 		269B32512713C00E00B9357B /* PokemonBattleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B32502713C00E00B9357B /* PokemonBattleUITestsLaunchTests.swift */; };
@@ -50,6 +51,7 @@
 		268B3C2D271626E700DA0920 /* MyPokemonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPokemonView.swift; sourceTree = "<group>"; };
 		268B3C2E271626E700DA0920 /* OpponentPokemonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpponentPokemonView.swift; sourceTree = "<group>"; };
 		268B3C2F271626E700DA0920 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		268B3C3A27166AD200DA0920 /* HPBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPBarView.swift; sourceTree = "<group>"; };
 		269B32302713C00D00B9357B /* Pokemon Battle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon Battle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		269B32402713C00E00B9357B /* Pokemon BattleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemon BattleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		269B32442713C00E00B9357B /* PokemonBattleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonBattleTests.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				268B3C2D271626E700DA0920 /* MyPokemonView.swift */,
 				268B3C2E271626E700DA0920 /* OpponentPokemonView.swift */,
+				268B3C3A27166AD200DA0920 /* HPBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				268B3C37271626E700DA0920 /* MyPokemonView.swift in Sources */,
 				268B3C36271626E700DA0920 /* View+Extension.swift in Sources */,
 				268B3C31271626E700DA0920 /* PokemonBattle.swift in Sources */,
+				268B3C3B27166AD200DA0920 /* HPBarView.swift in Sources */,
 				268B3C33271626E700DA0920 /* Shake.swift in Sources */,
 				268B3C38271626E700DA0920 /* OpponentPokemonView.swift in Sources */,
 			);

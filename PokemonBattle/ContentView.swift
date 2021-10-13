@@ -23,10 +23,13 @@ struct ContentView: View {
             MyPokemonView(pokemon:  myPokemon)
             HStack(spacing: 50) {
                 Button("Attack") {
-                    opponentPokemon.attacked(damage: Double.random(in: 1...50))
+                    opponentPokemon.attacked()
                     attackDisabled = true
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                        myPokemon.attacked(damage:  Double.random(in: 1...50))
+                        if opponentPokemon.hpStatus.pokemonIsDefeated() || myPokemon.hpStatus.pokemonIsDefeated() {
+                            return
+                        }
+                        myPokemon.attacked()
                         attackDisabled = false
                     }
                 }.disabled(attackDisabled)
@@ -35,6 +38,7 @@ struct ContentView: View {
                                       name: "Pikachu")
                     opponentPokemon = Pokemon(img: "bulbasaur",
                                         name: "Bulbasaur")
+                    attackDisabled = false
                 }
             }
         }.frame(width: 300, height: 400)
