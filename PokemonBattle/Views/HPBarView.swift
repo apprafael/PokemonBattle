@@ -24,7 +24,7 @@ struct HPBarView: View {
                 .cornerRadius(50, corners: [.topLeft,.bottomLeft])
                 .frame(width: hpStatus.hpLevel, height: 10)
                 .foregroundColor(hpStatus.hpColor)
-                .animation(Animation.easeOut(duration: 1.0))
+                .animation(Animation.easeOut(duration: 1.0), value: hpStatus.hpLevel)
         }
     }
 }
