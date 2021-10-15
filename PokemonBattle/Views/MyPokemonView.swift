@@ -20,15 +20,14 @@ struct MyPokemonView: View {
                 .scaledToFit()
                 .frame(width: pokemon.pokemonWidth, height: pokemon.pokemonWidth)
                 .modifier(Shake(animatableData: CGFloat(pokemon.hpStatus.attempts)))
-                .animation(Animation.easeOut(duration: 1.0))
+                .animation(.easeOut(duration: 1.0), value: pokemon.hpStatus.hpLevel)
             VStack(alignment: .trailing, spacing: 5) {
-                Text("\(pokemon.name)")
+                Text(pokemon.name)
                 Text("\(Int(pokemon.hpStatus.hpLevel))/150")
                 HPBarView(hpStatus: pokemon.hpStatus)
             }
         }
         .position(x: pokemon.position, y: 100.0)
-        .animation(Animation.easeOut(duration: 1.0))
     }
 }
 
