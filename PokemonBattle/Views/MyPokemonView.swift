@@ -15,17 +15,8 @@ struct MyPokemonView: View {
     }
     var body: some View {
         HStack(alignment: .top) {
-            Image(pokemon.img)
-                .resizable()
-                .scaledToFit()
-                .frame(width: pokemon.pokemonWidth, height: pokemon.pokemonWidth)
-                .modifier(Shake(animatableData: CGFloat(pokemon.hpStatus.attempts)))
-                .animation(.easeOut(duration: 1.0), value: pokemon.hpStatus.hpLevel)
-            VStack(alignment: .trailing, spacing: 5) {
-                Text(pokemon.name)
-                Text("\(Int(pokemon.hpStatus.hpLevel))/150")
-                HPBarView(hpStatus: pokemon.hpStatus)
-            }
+            PokemonImage(of: pokemon)
+            PokemonStatsView(of: pokemon, isOpponent: false)
         }
         .position(x: pokemon.position, y: 100.0)
     }
@@ -36,5 +27,3 @@ struct MyPokemonView_Previews: PreviewProvider {
         MyPokemonView(pokemon: Pokemon(img: "pikachu", name: "Pikachu"))
     }
 }
-
-

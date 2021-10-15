@@ -34,6 +34,8 @@ struct Pokemon {
             position = 1000.0
         }
     }
+    
+    static let pikachuExample = Pokemon(img: "pikachu", name: "Pikachu")
 }
 
 struct HPStatus {

@@ -32,5 +32,6 @@ struct HPBarView: View {
 struct HPBarView_Previews: PreviewProvider {
     static var previews: some View {
         HPBarView(hpStatus: HPStatus())
+            .previewLayout(.fixed(width: 250, height: 100))
     }
 }

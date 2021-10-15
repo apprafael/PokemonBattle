@@ -14,18 +14,9 @@ struct OpponentPokemonView: View {
         self.pokemon = pokemon
     }
     var body: some View {
-    HStack(alignment: .top) {
-        VStack(alignment: .leading, spacing: 5) {
-            Text(pokemon.name)
-            Text("\(Int(pokemon.hpStatus.hpLevel))/150")
-            HPBarView(hpStatus: pokemon.hpStatus)
-        }
-        Image(pokemon.img)
-            .resizable()
-                .scaledToFit()
-                .frame(width: pokemon.pokemonWidth, height: pokemon.pokemonWidth)
-                .modifier(Shake(animatableData: CGFloat(pokemon.hpStatus.attempts)))
-                .animation(.easeOut(duration: 1.0), value: pokemon.hpStatus.hpLevel)
+        HStack(alignment: .top) {
+            PokemonStatsView(of: pokemon, isOpponent: true)
+            PokemonImage(of: pokemon)
         }
         .position(x: pokemon.position, y: 100.0)
     }
