@@ -18,7 +18,7 @@ struct MyPokemonView: View {
             Image(pokemon.img)
                 .resizable()
                 .scaledToFit()
-                .frame(width: pokemon.pokemonWidht, height: pokemon.pokemonWidht)
+                .frame(width: pokemon.pokemonWidth, height: pokemon.pokemonWidth)
                 .modifier(Shake(animatableData: CGFloat(pokemon.hpStatus.attempts)))
                 .animation(Animation.easeOut(duration: 1.0))
             VStack(alignment: .trailing, spacing: 5) {

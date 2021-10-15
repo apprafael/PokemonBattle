@@ -10,7 +10,7 @@ import SwiftUI
 struct Pokemon {
     let img: String
     let name: String
-    var pokemonWidht: CGFloat = 100.0
+    var pokemonWidth: CGFloat = 100.0
     var progressPositon = 0.1
     var position: CGFloat = 150
     var hpStatus: HPStatus = HPStatus()
