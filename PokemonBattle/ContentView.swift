@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         VStack() {
             OpponentPokemonView(pokemon: opponentPokemon)
-            MyPokemonView(pokemon:  myPokemon)
+            MyPokemonView(pokemon: myPokemon)
             HStack(spacing: 50) {
                 Button("Attack") {
                     opponentPokemon.attacked()
@@ -36,7 +36,7 @@ struct ContentView: View {
                         attackDisabled = false
                     }
                 }.disabled(attackDisabled)
-                Button("retry") {
+                Button("Retry") {
                     myPokemon = Pokemon(img: "pikachu",
                                       name: "Pikachu")
                     opponentPokemon = Pokemon(img: "bulbasaur",

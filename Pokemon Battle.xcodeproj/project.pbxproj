@@ -21,6 +21,8 @@
 		269B32452713C00E00B9357B /* PokemonBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B32442713C00E00B9357B /* PokemonBattleTests.swift */; };
 		269B324F2713C00E00B9357B /* PokemonBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B324E2713C00E00B9357B /* PokemonBattleUITests.swift */; };
 		269B32512713C00E00B9357B /* PokemonBattleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B32502713C00E00B9357B /* PokemonBattleUITestsLaunchTests.swift */; };
+		8206384027197A4400F8A714 /* PokemonStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8206383F27197A4400F8A714 /* PokemonStatsView.swift */; };
+		8206384227197AF300F8A714 /* PokemonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8206384127197AF300F8A714 /* PokemonImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		269B324A2713C00E00B9357B /* Pokemon BattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemon BattleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		269B324E2713C00E00B9357B /* PokemonBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonBattleUITests.swift; sourceTree = "<group>"; };
 		269B32502713C00E00B9357B /* PokemonBattleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonBattleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8206383F27197A4400F8A714 /* PokemonStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonStatsView.swift; sourceTree = "<group>"; };
+		8206384127197AF300F8A714 /* PokemonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +142,9 @@
 			children = (
 				268B3C2D271626E700DA0920 /* MyPokemonView.swift */,
 				268B3C2E271626E700DA0920 /* OpponentPokemonView.swift */,
+				8206383F27197A4400F8A714 /* PokemonStatsView.swift */,
 				268B3C3A27166AD200DA0920 /* HPBarView.swift */,
+				8206384127197AF300F8A714 /* PokemonImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,8 +320,10 @@
 				268B3C34271626E700DA0920 /* Pokemon.swift in Sources */,
 				268B3C39271626E700DA0920 /* ContentView.swift in Sources */,
 				268B3C37271626E700DA0920 /* MyPokemonView.swift in Sources */,
+				8206384027197A4400F8A714 /* PokemonStatsView.swift in Sources */,
 				268B3C36271626E700DA0920 /* View+Extension.swift in Sources */,
 				268B3C31271626E700DA0920 /* PokemonBattle.swift in Sources */,
+				8206384227197AF300F8A714 /* PokemonImage.swift in Sources */,
 				268B3C3B27166AD200DA0920 /* HPBarView.swift in Sources */,
 				268B3C33271626E700DA0920 /* Shake.swift in Sources */,
 				268B3C38271626E700DA0920 /* OpponentPokemonView.swift in Sources */,
@@ -479,7 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokemonBattle/Preview Content\"";
-				DEVELOPMENT_TEAM = 582V3HX479;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -509,7 +517,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokemonBattle/Preview Content\"";
-				DEVELOPMENT_TEAM = 582V3HX479;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -540,7 +548,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 582V3HX479;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,7 +573,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 582V3HX479;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

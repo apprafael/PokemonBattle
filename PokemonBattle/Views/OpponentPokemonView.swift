@@ -14,21 +14,11 @@ struct OpponentPokemonView: View {
         self.pokemon = pokemon
     }
     var body: some View {
-    HStack(alignment: .top) {
-        VStack(alignment: .leading, spacing: 5) {
-            Text("\(pokemon.name)")
-            Text("\(Int(pokemon.hpStatus.hpLevel))/150")
-            HPBarView(hpStatus: pokemon.hpStatus)
-        }
-        Image(pokemon.img)
-            .resizable()
-                .scaledToFit()
-                .frame(width: pokemon.pokemonWidht, height: pokemon.pokemonWidht)
-                .modifier(Shake(animatableData: CGFloat(pokemon.hpStatus.attempts)))
-                .animation(Animation.easeOut(duration: 1.0))
+        HStack(alignment: .top) {
+            PokemonStatsView(of: pokemon, isOpponent: true)
+            PokemonImage(of: pokemon)
         }
         .position(x: pokemon.position, y: 100.0)
-        .animation(Animation.easeOut(duration: 1.0))
     }
 }
 

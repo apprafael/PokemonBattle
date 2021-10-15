@@ -24,7 +24,7 @@ struct HPBarView: View {
                 .cornerRadius(50, corners: [.topLeft,.bottomLeft])
                 .frame(width: hpStatus.hpLevel, height: 10)
                 .foregroundColor(hpStatus.hpColor)
-                .animation(Animation.easeOut(duration: 1.0))
+                .animation(Animation.easeOut(duration: 1.0), value: hpStatus.hpLevel)
         }
     }
 }
@@ -32,5 +32,6 @@ struct HPBarView: View {
 struct HPBarView_Previews: PreviewProvider {
     static var previews: some View {
         HPBarView(hpStatus: HPStatus())
+            .previewLayout(.fixed(width: 250, height: 100))
     }
 }
