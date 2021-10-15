@@ -25,5 +25,6 @@ struct MyPokemonView: View {
 struct MyPokemonView_Previews: PreviewProvider {
     static var previews: some View {
         MyPokemonView(pokemon: Pokemon(img: "pikachu", name: "Pikachu"))
+            .previewLayout(.fixed(width: 300, height: 200))
     }
 }
