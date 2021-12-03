@@ -18,6 +18,7 @@ struct OpponentPokemonView: View {
             PokemonStatsView(of: pokemon, isOpponent: true)
             PokemonImage(of: pokemon)
         }
+        .animation(.easeOut(duration: 1.0))
         .position(x: pokemon.position, y: 100.0)
     }
 }

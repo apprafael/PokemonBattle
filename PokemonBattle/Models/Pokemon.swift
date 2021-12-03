@@ -11,7 +11,6 @@ struct Pokemon {
     let img: String
     let name: String
     private(set) var pokemonWidth: CGFloat = 100.0
-//    private(set) var progressPositon = 0.1
     private(set) var position: CGFloat = 150
     private(set) var hpStatus: HPStatus
     
