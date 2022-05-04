@@ -15,17 +15,24 @@ struct HPBarView: View {
     }
     
     var body: some View {
-        ZStack(alignment: .leading) {
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .frame(width: 150, height: 10)
-                .foregroundColor(.black.opacity(0.1))
-                .background()
+        HStack {
             Rectangle()
-                .cornerRadius(50, corners: [.topLeft,.bottomLeft])
                 .frame(width: hpStatus.hpLevel, height: 10)
                 .foregroundColor(hpStatus.hpColor)
                 .animation(Animation.easeOut(duration: 1.0), value: hpStatus.hpLevel)
+                .mask(alignment: .leading) {
+                    RoundedRectangle(cornerRadius: 20, style: .circular)
+                        .frame(width: 150, height: 10)
+                        .clipped()
+                }
+                .background(
+                    RoundedRectangle(cornerRadius: 20, style: .circular)
+                        .frame(width: 150, height: 10)
+                        .foregroundColor(.gray.opacity(0.2))
+                    , alignment: .leading)
+                
         }
+        .frame(width: 150, height: 10, alignment: .leading)
     }
 }
 
