@@ -38,7 +38,7 @@ struct ContentView: View {
                 }.disabled(attackDisabled)
                 Button("Retry") {
                     myPokemon = Pokemon(img: "pikachu",
-                                      name: "Pikachu")
+                                        name: "Pikachu")
                     opponentPokemon = Pokemon(img: "bulbasaur",
                                         name: "Bulbasaur")
                     attackDisabled = false
